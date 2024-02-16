@@ -1,0 +1,339 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
+    background-color:black;
+    color:white;
+    overflow:hidden;
+}
+
+.main{
+    display:flex;
+    height:100vh;
+    padding:0.5rem;
+}
+
+.sidebar{
+    background-color:black;
+    width:350px;
+    /* border-radius:1rem; 1rem=16px */
+    margin-right:0.5rem;
+}
+
+.main-content{
+    background-color: #121212;
+    flex:1;
+    overflow:auto;
+    border-radius:1rem;
+    padding-left:1.5rem;
+}
+
+.music-player{
+    background-color:black;
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height:72px;
+}
+
+a{
+    text-decoration:none;
+    color:white;
+}
+
+.nav{
+    background-color:#121212;
+    display:flex;
+    flex-direction:column;
+    border-radius:1rem;
+    height:100px;
+    justify-content:center;
+    padding:0.5rem 0.75rem;
+}
+
+.nav-option{
+    line-height:2.5rem;
+    padding:0 1rem;
+    opacity:0.7;
+}
+
+.nav-option:hover{
+    opacity:1;
+}
+
+.nav-option i{
+    font-size:1.25rem;
+}
+
+.nav-option a{
+    font-size:1rem;
+    margin-left:1rem;
+}
+
+.options{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.library{
+    background-color:#121212;
+    height:100%;
+    border-radius: 1rem;
+    justify-content:center;
+    padding:0.5rem 0.75rem;
+    margin-top:0.5rem;
+}
+
+.lib-options img{
+    height:1.25rem;
+    width:1.25rem;
+}
+
+.icons{
+    font-size:1.25rem;
+    display:flex;
+}
+
+.icons i{
+    margin-right:1rem;
+    opacity:0.7;
+}
+
+.icons i:hover{
+    opacity:1;
+}
+
+.box{
+    background-color:#232323;
+    height:8rem;
+    border-radius:0.75rem;
+    margin:0.75rem 0 1rem 0;
+    padding:0.75rem 1rem;
+}
+
+.p1{
+    font-weight:500;
+    font-size:1rem;
+}
+
+.p2{
+    opacity:0.9;
+    font-size:0.85rem;
+}
+
+.badge{
+    background-color:white;
+    border:none;
+    border-radius:100px;
+    padding:0.25rem 1rem;
+    height:2rem;
+    margin-top:0.5rem;
+    font-weight:700;
+    width:fit-content;
+    cursor:pointer;
+}
+
+.dark-badge{
+    background-color:black;
+    color:white;
+}
+
+.sticky-nav{
+    position:sticky;
+    top:0;
+    background-color:#121212;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem 1.25rem 1rem 0;
+    z-index:10;
+}
+
+.sticky-nav-options{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.nav-item{
+    margin-right:1rem;
+}
+
+.sticky-nav-options i{
+    font-size:1.25rem;
+}
+
+@media(max-width:1000px){
+    .hide{
+        display:none;
+    }
+}
+
+.cards-container{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.card{
+    background-color:#232323;
+    width:200px;
+    border-radius:0.5rem;
+    padding:1rem;
+    margin:1.5rem 1.75rem 1.5rem 0;
+}
+
+.card-img{
+    width:100%;
+    border-radius:0.5rem;
+    /* height:175px; */
+}
+
+.card-title{
+    font-weight:600;
+}
+
+.card-content{
+    font-size:0.85rem;
+    opacity:0.8;
+}
+
+.heading{
+    display:flex;
+    align-items:end;
+    justify-content:space-between;
+    padding-right:1.75rem;
+}
+
+.footer{
+    height:300px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.line{
+    height:30%;
+    width:90%;
+    border-top:1px solid white;
+    opacity:0.4;
+}
+
+.music-player{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.album{
+    width:25%;
+}
+
+.player{
+    width:50%;
+}
+
+.controls{
+    width:25%;
+}
+
+.player-controls{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.player-control-icon{
+    height:1.10rem;
+    margin-right:1.75rem;
+    opacity:0.7;
+}
+
+.player-control-icon:hover{
+    opacity:1;
+}
+
+.playback-bar{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.progress-bar{
+    width:70%;
+    appearance:none;
+    background-color:transparent;
+    cursor:pointer;
+}
+
+.progress-bar::-webkit-slider-runnable-track{
+    background-color:#ddd;
+    border-radius:100px;
+    height:0.20rem;
+}
+
+.progress-bar::-webkit-slider-thumb{
+    appearance:none;
+    height:1rem;
+    width:1rem;
+    background-color:#1bd760;
+    border-radius:50%;
+    margin-top:-6px;
+}
+
+.album{
+    display:flex;
+    align-items:center;
+}
+
+.album-img img{
+    height:3.2rem;
+    width:3.2rem;
+    border-radius:0.35rem;
+    margin-left:0.5rem;
+}
+
+.album-title{
+    font-size:14px;
+    margin:0 0 0.4rem 1.5rem;
+}
+
+.album-artist{
+    font-size:11px;
+    opacity:0.6;
+    margin:0 0 0 1.5rem;
+}
+
+.controls{
+    display:flex;
+    align-items:center;
+    justify-content:end;
+}
+
+.controls img{
+    height:2.5rem;
+    margin-right:0.5rem;
+}
+
+.volume-bar{
+    width:93px;
+    appearance:none;
+    background-color:transparent;
+    cursor:pointer;
+    margin-right:1rem;
+}
+
+.volume-bar::-webkit-slider-runnable-track{
+    background-color:#ddd;
+    border-radius:200px;
+    height:0.20rem;
+}
+
+.volume-bar::-webkit-slider-thumb{
+    appearance:none;
+    height:0.75rem;
+    width:0.75rem;
+    background-color:#ddd;
+    border-radius:50%;
+    margin-top:-5px;
+}
+
