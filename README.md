@@ -1,8 +1,8 @@
-# Spotify-design-clone
+# Spotify-Clone
 
 ## Overview
 
-This project is a front-end clone of the Spotify music streaming service, crafted with HTML, CSS, and various front-end technologies. The primary goal is to showcase the ability to replicate Spotify's user interface and design, offering a hands-on experience for front-end development enthusiasts.
+This project is a working clone of the Spotify music streaming service, crafted with HTML, CSS, JavaScript and various front-end technologies. The primary goal is to showcase the ability to replicate Spotify's user interface and design and experience of listening music, offering a hands-on experience for front-end development enthusiasts. Users can also enjoy various songs on this clone.
 
 ## Features
 
@@ -17,7 +17,10 @@ This project is a front-end clone of the Spotify music streaming service, crafte
 - **Seamless Experience:** Ensures a responsive design for a seamless user experience across various devices and screen sizes.
 - **Mobile-Friendly:** Optimized for mobile viewing, enabling users to enjoy the Spotify clone on their smartphones.
 
-### 3. Static Content Showcase
+### 3. Dynamic Content and Music Playback
 
-- **Visual Aspect:** The project currently features static content, emphasizing the visual representation of Spotify's design.
-- **Dynamic Future:** While static for now, future enhancements may involve integrating dynamic content using JavaScript.
+- **Play Music:** The project now includes JavaScript functionality that allows users to play music, enhancing the interactive experience.
+- **Interactive Elements:** Users can interact with song cards to play, pause, and switch tracks, providing a more dynamic and engaging interface.
+- **Static and Dynamic Integration:** While initially focusing on static content, the project has evolved to integrate dynamic features, offering a richer user experience.
+
+
