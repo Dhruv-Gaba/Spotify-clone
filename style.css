@@ -180,6 +180,7 @@ a{
     border-radius:0.5rem;
     padding:1rem;
     margin:1.5rem 1.75rem 1.5rem 0;
+    cursor:pointer;
 }
 
 .card-img{
@@ -241,11 +242,18 @@ a{
     align-items:center;
     justify-content:center;
 }
+#play-btn{
+    opacity: 1;
+    font-size: 2rem;
+    margin-right:1.75rem;
+    cursor: pointer;
+}
 
 .player-control-icon{
     height:1.10rem;
     margin-right:1.75rem;
     opacity:0.7;
+    cursor:pointer;
 }
 
 .player-control-icon:hover{
@@ -256,28 +264,31 @@ a{
     display:flex;
     align-items:center;
     justify-content:center;
+    margin-top:6px;
 }
 
 .progress-bar{
     width:70%;
     appearance:none;
     background-color:transparent;
+    background-color: #ddd;
     cursor:pointer;
+    border-radius:100px;
+    height:0.30rem;
 }
 
-.progress-bar::-webkit-slider-runnable-track{
+/* .progress-bar::-webkit-slider-runnable-track{
     background-color:#ddd;
     border-radius:100px;
     height:0.20rem;
-}
+} */
 
 .progress-bar::-webkit-slider-thumb{
     appearance:none;
-    height:1rem;
-    width:1rem;
+    height:0.7rem;
+    width:0.7rem;
     background-color:#1bd760;
     border-radius:50%;
-    margin-top:-6px;
 }
 
 .album{
@@ -337,3 +348,25 @@ a{
     margin-top:-5px;
 }
 
+#like-btn{
+    font-size:0.9rem;
+    color:black;
+    position:relative;
+    left:51.2px;
+    bottom:1px;
+    cursor: pointer;
+    user-select: none;
+}
+
+::-webkit-scrollbar{
+    appearance:none;
+    background-color:transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: hsla(0,0%,100%,.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: hsla(0,0%,100%,.5);
+}

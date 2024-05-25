@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Spotify - Web Player: Music for everyone</title>
     <link rel="icon" href="./assets/logo.png">
     <link rel="stylesheet" href="style.css">
@@ -64,41 +65,41 @@
             </div>
             <h2>Recently Played</h2>
             <div class="cards-container">
-                <div class="card">
-                    <img src="./assets/card1img.jpeg" class="card-img">
-                    <p class="card-title">Top 50 - Global</p>
-                    <p class="card-content">Your daily update of the most played tracks ...</p>
+                <div class="card song-card" id="card1">
+                    <img src="./assets/card1img.png" class="card-img">
+                    <p class="card-title">Daylight</p>
+                    <p class="card-content">David Kushner</p>
                 </div>
             </div>
             <div class="heading">
                 <h2>Trending now near you</h2>
-                <p style="opacity:0.65;">Show all</p>
+                <p style="opacity:0.65; cursor: pointer;">Show all</p>
             </div>
             <div class="cards-container">
-                <div class="card">
+                <div class="card song-card">
                     <img src="./assets/card2img.jpeg" class="card-img">
-                    <p class="card-title">Mahiye Jinna Sohna</p>
-                    <p class="card-content">Darshan Raval</p>
+                    <p class="card-title"></p>
+                    <p class="card-content"></p>
                 </div>
-                <div class="card">
+                <div class="card song-card">
                     <img src="./assets/card3img.jpeg" class="card-img">
-                    <p class="card-title">Mere Pass Tum Ho (Ori...</p>
-                    <p class="card-content">Rahat Fateh Ali Khan</p>
+                    <p class="card-title"></p>
+                    <p class="card-content"></p>
                 </div>
-                <div class="card">
-                    <img src="./assets/card4img.jpeg" class="card-img">
-                    <p class="card-title">Naa Ready (from "L...</p>
-                    <p class="card-content">Anirudh Ravichander, Thalapathy Vijay, Asal...</p>
+                <div class="card song-card" id="Pee_Loon">
+                    <img src="./assets/card4img.png" class="card-img">
+                    <p class="card-title"></p>
+                    <p class="card-content"></p>
                 </div>
-                <div class="card">
+                <div class="card song-card">
                     <img src="./assets/card7img.png" class="card-img">
-                    <p class="card-title">Jawan</p>
-                    <p class="card-content">Anirudh Ravichander</p>
+                    <p class="card-title"></p>
+                    <p class="card-content"></p>
                 </div>
             </div>
             <div class="heading">
                 <h2>Featured Charts</h2>
-                <p style="opacity:0.65;">Show all</p>
+                <p style="opacity:0.65; cursor:pointer;">Show all</p>
             </div>
             <div class="cards-container">
                 <div class="card">
@@ -128,26 +129,28 @@
         </div>
         <div class="music-player">
             <div class="album">
-                <div class="album-img"><img src="./assets/album_picture.jpeg"></div>
+                <div class="album-img"><img src="./assets/album_picture.jpeg" id="playing-img"></div>
                 <div>
                     <p class="album-title">Daylight</p>
                     <p class="album-artist">David Kushner</p>
                 </div>
-                <img src="./assets/album_icon1.png" class="album-icon" style="margin-left:2rem;">
+                <i class="fa-solid fa-heart album-icon" id="like-btn"></i>
+                <img src="./assets/album_icon1.png" class="album-icon" style="margin-left:2rem; user-select: none;">
                 <img src="./assets/album_icon2.png" class="album-icon" style="height:2.2rem; margin-left:0.8rem;">
             </div>
             <div class="player">
                 <div class="player-controls">
                     <img src="./assets/player_icon1.png" class="player-control-icon">
-                    <img src="./assets/player_icon2.png" class="player-control-icon">
-                    <img src="./assets/player_icon3.png" class="player-control-icon" style="opacity:1; height:2rem;">
-                    <img src="./assets/player_icon4.png" class="player-control-icon">
+                    <img src="./assets/player_icon2.png" class="player-control-icon" id="previous">
+                    <i class="fa-solid fa-circle-play" class="player-control-icon" id="play-btn"></i>
+                    <!-- <img src="./assets/player_icon3.png" class="player-control-icon" id="play-btn" style="opacity:1; height:2rem;"> -->
+                    <img src="./assets/player_icon4.png" class="player-control-icon" id="next">
                     <img src="./assets/player_icon5.png" class="player-control-icon">
                 </div>
                 <div class="playback-bar">
-                    <span class="curr-time">2:29</span>
-                    <input type="range" min="0" max="100" class="progress-bar" value="70">
-                    <span class="tot-time">3:33</span>
+                    <span class="curr-time" style="width:45px;"></span>
+                    <input type="range" min="0" max="100" class="progress-bar" value="0" style="accent-color: green;">
+                    <span class="tot-time" style="margin-left: 3px;"></span>
                 </div>
             </div>
             <div class="controls">
@@ -160,5 +163,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
